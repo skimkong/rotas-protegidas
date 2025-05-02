@@ -1,70 +1,72 @@
-# Getting Started with Create React App
+✅ README.md
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# 🔐 Controle de Transações - React com Rotas Protegidas
 
-## Available Scripts
+Projeto em React com autenticação, rotas protegidas e design moderno. Inclui login, verificação de token, proteção de páginas, testes com RTL/Jest e layout com Tailwind CSS.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 🚀 Funcionalidades
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- ✅ Roteamento com React Router v6
+- ✅ Página de Login com design moderno
+- ✅ Verificação de token no `localStorage`
+- ✅ Redirecionamento automático se o usuário não estiver autenticado
+- ✅ Rota protegida para `/transacoes`
+- ✅ Componente `PrivateRoute`
+- ✅ Dashboard de transações (mock)
+- ✅ Página inicial (landing page)
+- ✅ Layout reutilizável
+- ✅ Rodapé com assinatura personalizada
+- ✅ Ícone e título personalizados no navegador
+- ✅ Testes com Jest e React Testing Library
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 🖼️ Demonstração
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<img src="./src/assets/demo.png" alt="Demonstração do projeto" width="100%">
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🛠️ Como executar o projeto localmente
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 1. Clone o repositório
+```bash
+git clone https://github.com/seuusuario/rotas-protegidas.git
+cd rotas-protegidas
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+2. Instale as dependências
+npm install
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3. Inicie o servidor local
+npm start
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Acesse no navegador: http://localhost:3000
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+🧪 Rodando os testes
+npm test
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Inclui testes para o componente LoginForm.
 
-## Learn More
+📁 Estrutura de Pastas
+src/
+├── assets/                  # Imagens e ícones (se tiver)
+├── components/              # Componentes reutilizáveis
+│   ├── __tests__/           # Testes dos componentes
+│   │   └── LoginForm.test.jsx
+│   ├── LoginForm.jsx
+│   └── PrivateRoute.jsx
+├── pages/                   # Páginas da aplicação
+│   ├── Home.jsx
+│   ├── Login.jsx
+│   └── Transacoes.jsx
+├── App.jsx                  # Componente principal
+├── App.css
+├── App.test.jsx             # Teste da aplicação
+├── index.js                 # Ponto de entrada
+├── index.css                # Tailwind + estilos globais
+├── logo.svg
+└── setupTests.js            # Configuração de testes
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

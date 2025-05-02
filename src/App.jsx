@@ -1,14 +1,12 @@
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Login from "./pages/Login";
 import Transacoes from "./pages/Transacoes";
 import PrivateRoute from "./componets/PrivateRoute";
-import Home from "./pages/Home";
 
-function App() {
+const App = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route
           path="/transacoes"
@@ -21,6 +19,6 @@ function App() {
       </Routes>
     </BrowserRouter>
   );
-}
+};
 
 export default App;
