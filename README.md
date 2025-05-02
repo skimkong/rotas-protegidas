@@ -23,12 +23,6 @@ Projeto em React com autenticação, rotas protegidas e design moderno. Inclui l
 
 ---
 
-## 🖼️ Demonstração
-
-<img src="./src/assets/demo.png" alt="Demonstração do projeto" width="100%">
-
----
-
 ## 🛠️ Como executar o projeto localmente
 
 ### 1. Clone o repositório
@@ -45,10 +39,15 @@ npm start
 
 Acesse no navegador: http://localhost:3000
 
+---
+
+
 🧪 Rodando os testes
 npm test
 
 Inclui testes para o componente LoginForm.
+
+---
 
 📁 Estrutura de Pastas
 src/
@@ -70,6 +69,8 @@ src/
 ├── logo.svg
 └── setupTests.js            # Configuração de testes
 
+---
+
 🧠 Aprendizados
 Este projeto mostra como:
 
@@ -83,6 +84,8 @@ Testar componentes com React Testing Library
 
 Organizar layout reutilizável
 
+---
+
 📦 Futuras melhorias (sugestões)
 Conectar com Firebase ou Supabase para autenticação real
 
@@ -94,6 +97,7 @@ Cadastro de novos usuários
 
 Responsividade total
 
+---
 
 🧑‍💻 Desenvolvido por
 Bruno Maia
