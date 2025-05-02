@@ -70,3 +70,30 @@ src/
 ├── logo.svg
 └── setupTests.js            # Configuração de testes
 
+🧠 Aprendizados
+Este projeto mostra como:
+
+Criar rotas protegidas em React
+
+Gerenciar autenticação com localStorage
+
+Estilizar com Tailwind CSS
+
+Testar componentes com React Testing Library
+
+Organizar layout reutilizável
+
+📦 Futuras melhorias (sugestões)
+Conectar com Firebase ou Supabase para autenticação real
+
+Dashboard dinâmico com Chart.js ou Recharts
+
+Upload de imagem de perfil
+
+Cadastro de novos usuários
+
+Responsividade total
+
+
+🧑‍💻 Desenvolvido por
+Bruno Maia
