@@ -1,13 +1,20 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
+import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Transacoes from "./pages/Transacoes";
-import PrivateRoute from "./componets/PrivateRoute";
+import PrivateRoute from "./components/PrivateRoute";
 
 const App = () => {
+  const token = localStorage.getItem("token");
+
   return (
-    <BrowserRouter>
+    <Router>
       <Routes>
-        <Route path="/login" element={<Login />} />
+        <Route path="/" element={<Home />} />
+        <Route
+          path="/login"
+          element={token ? <Navigate to="/transacoes" /> : <Login />}
+        />
         <Route
           path="/transacoes"
           element={
@@ -16,8 +23,9 @@ const App = () => {
             </PrivateRoute>
           }
         />
+        <Route path="*" element={<Navigate to="/" />} />
       </Routes>
-    </BrowserRouter>
+    </Router>
   );
 };
 

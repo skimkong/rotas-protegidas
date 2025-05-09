@@ -1,31 +1,23 @@
-✅ README.md
-
 # 🔐 Controle de Transações - React com Rotas Protegidas
 
-Projeto em React com autenticação, rotas protegidas e design moderno. Inclui login, verificação de token, proteção de páginas, testes com RTL/Jest e layout com Tailwind CSS.
+Projeto em React com autenticação real, rotas protegidas, testes automatizados e design moderno com Tailwind CSS.
 
 ---
 
 ## 🚀 Funcionalidades
 
 - ✅ Roteamento com React Router v6
-- ✅ Página de Login com design moderno
-- ✅ Verificação de token no `localStorage`
+- ✅ Página de Login com entrada real de dados (email e senha)
+- ✅ Validação de login com salvamento de token no `localStorage`
 - ✅ Redirecionamento automático se o usuário não estiver autenticado
 - ✅ Rota protegida para `/transacoes`
 - ✅ Componente `PrivateRoute`
-- ✅ Dashboard de transações (mock)
+- ✅ Dashboard funcional de transações (usuário pode adicionar dados)
 - ✅ Página inicial (landing page)
-- ✅ Layout reutilizável
+- ✅ Layout reutilizável e estilizado com Tailwind
 - ✅ Rodapé com assinatura personalizada
 - ✅ Ícone e título personalizados no navegador
-- ✅ Testes com Jest e React Testing Library
-
----
-
-## 🖼️ Demonstração
-
-<img src="./src/assets/demo.png" alt="Demonstração do projeto" width="100%">
+- ✅ Testes com Jest e React Testing Library (RTL)
 
 ---
 
@@ -33,40 +25,20 @@ Projeto em React com autenticação, rotas protegidas e design moderno. Inclui l
 
 ### 1. Clone o repositório
 ```bash
-git clone https://github.com/seuusuario/rotas-protegidas.git
+git clone https://github.com/skimkong/rotas-protegidas.git
 cd rotas-protegidas
 
+---
 
-2. Instale as dependências
-npm install
+Acesso
+Login: admin@admin.com
+Senha: 123456
 
-3. Inicie o servidor local
-npm start
+Scripts
+npm start: roda localmente
 
-Acesse no navegador: http://localhost:3000
+npm test: roda os testes
 
-🧪 Rodando os testes
-npm test
 
-Inclui testes para o componente LoginForm.
-
-📁 Estrutura de Pastas
-src/
-├── assets/                  # Imagens e ícones (se tiver)
-├── components/              # Componentes reutilizáveis
-│   ├── __tests__/           # Testes dos componentes
-│   │   └── LoginForm.test.jsx
-│   ├── LoginForm.jsx
-│   └── PrivateRoute.jsx
-├── pages/                   # Páginas da aplicação
-│   ├── Home.jsx
-│   ├── Login.jsx
-│   └── Transacoes.jsx
-├── App.jsx                  # Componente principal
-├── App.css
-├── App.test.jsx             # Teste da aplicação
-├── index.js                 # Ponto de entrada
-├── index.css                # Tailwind + estilos globais
-├── logo.svg
-└── setupTests.js            # Configuração de testes
+---
 

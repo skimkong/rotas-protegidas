@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Login from "./pages/Login";
 import Transacoes from "./pages/Transacoes";
-import PrivateRoute from "./componets/PrivateRoute";
+import PrivateRoute from "./components/PrivateRoute";
 import Home from "./pages/Home";
 
 function App() {
